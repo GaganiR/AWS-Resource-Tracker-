@@ -16,6 +16,8 @@ AWS Resource Tracker is a __Bash script__ that monitors AWS resources such as __
     * Install jq for JSON processing.
 
 2. __Run the bash script manually:__
+![aws_resource_tracker shell file](https://github.com/user-attachments/assets/4519be77-710c-4f58-9245-18e325552f5e)
+
 ```
 chmod +x aws_resource_tracker.sh
 ./aws_resource_tracker.sh | more
@@ -30,24 +32,10 @@ crontab -e
 ```
 0 20 * * * /home/ubuntu/aws_resource_tracker.sh
 ```
+![cron job](https://github.com/user-attachments/assets/d68a41dc-0a6c-4e5c-b37c-5112ef3dd135)
+
 
   ## Example Output
-  ```
-print list of s3 buckets
-my-bucket-123
-my-second-bucket
+![resource output](https://github.com/user-attachments/assets/c1f072be-93ea-4b3c-9e17-8bcffcff87b6)
 
-print list of ec2 instances
-i-03d83dde0ac040ca0
-
-print list of lambda functions
-{
-  "Functions": []
-}
-
-print list of iam users
-{
-  "Users": []
-}
-```
 
